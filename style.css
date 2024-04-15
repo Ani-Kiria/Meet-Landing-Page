@@ -139,10 +139,16 @@ footer {
   background-image: url(./assets/mobile/image-footer.jpg);
   background-size: cover;
   gap: 24px;
+  position: relative;
+  isolation: isolate;
 }
 footer::after {
-  background-color: #4d96a9;
+  position: absolute;
+  content: "";
+  inset: 0;
+  /* background-color: #4d96a9; */
   opacity: 0.1;
+  background: linear-gradient(0deg, rgb(89 154 172 /0.8), rgb(89 154 172 /0.8));
 }
 .experience {
   text-align: center;
@@ -160,4 +166,9 @@ footer::after {
 }
 footer span {
   color: #d9b8ff;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    width: 457px;
+  }
 }
