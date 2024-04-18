@@ -9,6 +9,12 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
+.hero-image1 {
+  display: none;
+}
+.hero-image2 {
+  display: none;
+}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -225,5 +231,58 @@ footer span {
   }
   .connect {
     width: 573px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-image {
+    display: none;
+  }
+  .hero-image1 {
+    display: flex;
+  }
+  .hero-image2 {
+    display: flex;
+  }
+  .logo-image {
+    padding: 83px 0 63px;
+  }
+  .hero-container {
+    flex-direction: row;
+    gap: 88px;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    font-size: 64px;
+    width: 445px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+  .main-texts {
+    width: 540px;
+  }
+  .download-button:hover {
+    background-color: #71c0d4;
+  }
+  .info-button:hover {
+    background-color: #b18bdd;
+  }
+  .purple-download {
+    background-color: #b18bdd;
+  }
+  .image-container img {
+    width: 255px;
+  }
+  .image-container {
+    gap: 30px;
+  }
+  footer {
+    flex-direction: row;
+    gap: 125px;
   }
 }
